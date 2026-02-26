@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #667eea;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+}
+
+.api-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 10px 20px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #764ba2;
+}
+
+.response {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.info-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info-section li {
+    padding: 10px;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    border-left: 4px solid #667eea;
+    padding-left: 15px;
+}
+
+code {
+    background: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #d63384;
+}

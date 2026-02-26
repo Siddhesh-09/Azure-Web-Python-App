@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Web Python App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Azure Web Python App</h1>
+        <p>A Flask-based Python web application running on Azure</p>
+        
+        <section class="api-section">
+            <h2>API Demo</h2>
+            <div class="input-group">
+                <input type="text" id="nameInput" placeholder="Enter your name" value="World">
+                <button onclick="greet()">Get Greeting</button>
+            </div>
+            <div id="response" class="response"></div>
+        </section>
+        
+        <section class="info-section">
+            <h2>API Endpoints</h2>
+            <ul>
+                <li><code>GET /api/hello?name=YourName</code> - Get a personalized greeting</li>
+                <li><code>GET /api/health</code> - Check application health</li>
+            </ul>
+        </section>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
